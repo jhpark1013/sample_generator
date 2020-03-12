@@ -18,7 +18,9 @@
 	)
 	(
 		// Users to add ports here
-
+		input 			En;
+		input [7:0] FrameSize;
+		input 			AXI_EN;
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -71,7 +73,11 @@
 	);
 
 	// Add user logic here
-
+	assign m_axis_tdata = (AXI_En) ? s_axis_tdata : m_axis_tdataW;
+	assign m_axis_tstrb = (AXI_En) ? s_axis_tstrb : m_axis_tstrbW;
+	assign m_axis_tlast = (AXI_En) ? s_axis_tlast : m_axis_tlastW;
+	assign m_axis_tvalid = (AXI_En) ? s_axis_tvalid : m_axis_tvalidW;
+	assign s_axis_tready = m_axis_tready;
 	// User logic ends
 
 	endmodule
