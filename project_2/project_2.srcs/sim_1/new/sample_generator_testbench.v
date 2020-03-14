@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module sample_generator_testbench()
+module sample_generator_testbench();
   reg AXI_En;
   reg En;
   reg [7:0]FrameSize;
