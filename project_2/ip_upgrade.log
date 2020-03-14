@@ -1,0 +1,73 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
+| Date         : Sat Mar 14 10:50:51 2020
+| Host         : jaehee2-tp running 64-bit Ubuntu 19.04
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sample_generator_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_sample_generator_0_0 (user.org:user:sample_generator:1.0 (Rev. 3)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_sample_generator_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'AXI_En'
+
+-Upgrade has added port 'En'
+
+-Upgrade has added port 'FrameSize'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
+| Date         : Thu Mar 12 21:41:19 2020
+| Host         : jaehee2-tp running 64-bit Ubuntu 19.04
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sample_generator_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_sample_generator_0_0 (user.org:user:sample_generator:1.0 (Rev. 3)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
+| Date         : Thu Mar 12 21:33:30 2020
+| Host         : jaehee2-tp running 64-bit Ubuntu 19.04
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sample_generator_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_sample_generator_0_0 (user.org:user:sample_generator:1.0 (Rev. 3)) to Vivado generation flows.
+
