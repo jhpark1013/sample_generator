@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/jaehee2/Documents/gitrepos/fpga/sample_generator/project_2/project_2.runs/design_1_sample_generator_0_0_synth_1'
+HD_PWD='/home/jaehee2/Documents/gitrepos/fpga/sample_generator/project_2/project_2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log design_1_sample_generator_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_sample_generator_0_0.tcl
+EAStep vivado -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl

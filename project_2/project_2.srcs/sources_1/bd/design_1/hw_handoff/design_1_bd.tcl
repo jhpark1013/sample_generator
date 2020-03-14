@@ -156,15 +156,42 @@ proc create_root_design { parentCell } {
 
 
   # Create interface ports
+  set M_AXIS [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 M_AXIS ]
+
+  set S_AXIS [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:axis_rtl:1.0 S_AXIS ]
+  set_property -dict [ list \
+   CONFIG.HAS_TKEEP {0} \
+   CONFIG.HAS_TLAST {1} \
+   CONFIG.HAS_TREADY {1} \
+   CONFIG.HAS_TSTRB {1} \
+   CONFIG.LAYERED_METADATA {undef} \
+   CONFIG.TDATA_NUM_BYTES {4} \
+   CONFIG.TDEST_WIDTH {0} \
+   CONFIG.TID_WIDTH {0} \
+   CONFIG.TUSER_WIDTH {0} \
+   ] $S_AXIS
+
 
   # Create ports
+  set AXI_En [ create_bd_port -dir I AXI_En ]
+  set En [ create_bd_port -dir I En ]
+  set FrameSize [ create_bd_port -dir I -from 7 -to 0 FrameSize ]
   set m_axis_aclk_0 [ create_bd_port -dir I -type clk m_axis_aclk_0 ]
+  set m_axis_aresetn [ create_bd_port -dir I -type rst m_axis_aresetn ]
 
   # Create instance: sample_generator_0, and set properties
   set sample_generator_0 [ create_bd_cell -type ip -vlnv user.org:user:sample_generator:1.0 sample_generator_0 ]
 
+  # Create interface connections
+  connect_bd_intf_net -intf_net S_AXIS_1 [get_bd_intf_ports S_AXIS] [get_bd_intf_pins sample_generator_0/S_AXIS]
+  connect_bd_intf_net -intf_net sample_generator_0_M_AXIS [get_bd_intf_ports M_AXIS] [get_bd_intf_pins sample_generator_0/M_AXIS]
+
   # Create port connections
+  connect_bd_net -net AXI_En_1 [get_bd_ports AXI_En] [get_bd_pins sample_generator_0/AXI_En]
+  connect_bd_net -net En_1 [get_bd_ports En] [get_bd_pins sample_generator_0/En]
+  connect_bd_net -net FrameSize_1 [get_bd_ports FrameSize] [get_bd_pins sample_generator_0/FrameSize]
   connect_bd_net -net m_axis_aclk_0_1 [get_bd_ports m_axis_aclk_0] [get_bd_pins sample_generator_0/m_axis_aclk] [get_bd_pins sample_generator_0/s_axis_aclk]
+  connect_bd_net -net m_axis_aresetn_1 [get_bd_ports m_axis_aresetn] [get_bd_pins sample_generator_0/m_axis_aresetn] [get_bd_pins sample_generator_0/s_axis_aresetn]
 
   # Create address segments
 

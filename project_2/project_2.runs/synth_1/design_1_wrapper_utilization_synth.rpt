@@ -1,13 +1,13 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-| Date         : Sat Mar 14 10:51:49 2020
+| Date         : Sat Mar 14 12:55:10 2020
 | Host         : jaehee2-tp running 64-bit Ubuntu 19.04
-| Command      : report_utilization -file design_1_sample_generator_0_0_utilization_synth.rpt -pb design_1_sample_generator_0_0_utilization_synth.pb
-| Design       : design_1_sample_generator_0_0
+| Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+| Design       : design_1_wrapper
 | Device       : 7z020clg484-1
 | Design State : Synthesized
------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   58 |     0 |     53200 |  0.11 |
-|   LUT as Logic          |   58 |     0 |     53200 |  0.11 |
+| Slice LUTs*             |    0 |     0 |     53200 |  0.00 |
+|   LUT as Logic          |    0 |     0 |     53200 |  0.00 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
-| Slice Registers         |   10 |     0 |    106400 | <0.01 |
-|   Register as Flip Flop |   10 |     0 |    106400 | <0.01 |
+| Slice Registers         |    0 |     0 |    106400 |  0.00 |
+|   Register as Flip Flop |    0 |     0 |    106400 |  0.00 |
 |   Register as Latch     |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                |    0 |     0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |     13300 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 10    |          Yes |       Reset |            - |
+| 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    0 |     0 |       200 |  0.00 |
+| Bonded IOB                  |   90 |     0 |       200 | 45.00 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
@@ -146,23 +146,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |   38 |                 LUT |
-| LUT3     |   14 |                 LUT |
-| FDRE     |   10 |        Flop & Latch |
-| LUT6     |    5 |                 LUT |
-| LUT4     |    3 |                 LUT |
-| CARRY4   |    3 |          CarryLogic |
-| LUT1     |    2 |                 LUT |
-| LUT5     |    1 |                 LUT |
+| IBUF     |   51 |                  IO |
+| OBUF     |   39 |                  IO |
 +----------+------+---------------------+
 
 
 8. Black Boxes
 --------------
 
-+----------+------+
-| Ref Name | Used |
-+----------+------+
++-------------------------------+------+
+|            Ref Name           | Used |
++-------------------------------+------+
+| design_1_sample_generator_0_0 |    1 |
++-------------------------------+------+
 
 
 9. Instantiated Netlists

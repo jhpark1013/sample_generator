@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-// Date        : Sat Mar 14 10:51:49 2020
+// Date        : Sat Mar 14 10:51:48 2020
 // Host        : jaehee2-tp running 64-bit Ubuntu 19.04
-// Command     : write_verilog -force -mode synth_stub
-//               /home/jaehee2/Documents/gitrepos/fpga/sample_generator/project_2/project_2.srcs/sources_1/bd/design_1/ip/design_1_sample_generator_0_0/design_1_sample_generator_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_sample_generator_0_0 -prefix
+//               design_1_sample_generator_0_0_ design_1_sample_generator_0_0_stub.v
 // Design      : design_1_sample_generator_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1
