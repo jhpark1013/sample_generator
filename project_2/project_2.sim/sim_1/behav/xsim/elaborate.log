@@ -1,0 +1,20 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto 0b0c36aa66e64404a3d5f2e61742be45 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sample_generator_testbench_behav xil_defaultlib.sample_generator_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'M_AXIS_TDATA' [/home/jaehee2/Documents/gitrepos/fpga/sample_generator/project_2/project_2.ip_user_files/bd/design_1/ipshared/662a/hdl/sample_generator_v1_0.v:69]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'M_AXIS_TSTRB' [/home/jaehee2/Documents/gitrepos/fpga/sample_generator/project_2/project_2.ip_user_files/bd/design_1/ipshared/662a/hdl/sample_generator_v1_0.v:70]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sample_generator_v1_0_M_AXIS
+Compiling module xil_defaultlib.sample_generator_v1_0
+Compiling module xil_defaultlib.design_1_sample_generator_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.sample_generator_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sample_generator_testbench_behav

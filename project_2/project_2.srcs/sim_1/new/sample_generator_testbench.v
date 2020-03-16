@@ -23,7 +23,7 @@
 module sample_generator_testbench();
   reg AXI_En;
   reg En;
-  reg [7:0]FrameSize;
+  reg [31:0]FrameSize;
   wire [31:0]M_AXIS_tdata;
   wire M_AXIS_tlast;
   reg M_AXIS_tready;
@@ -34,8 +34,40 @@ module sample_generator_testbench();
   wire S_AXIS_tready;
   reg [3:0]S_AXIS_tstrb;
   reg S_AXIS_tvalid;
-  reg m_axis_aclk_0;
-  reg m_axis_aresetn;
+  reg Clk;
+  reg ResetN;
+
+initial begin
+  AXI_En = 0;
+  FrameSize = 16;
+  S_AXIS_tdata = 0;
+  S_AXIS_tlast = 0;
+  S_AXIS_tstrb = 0;
+  S_AXIS_tvalid = 0;
+end
+
+initial begin
+  Clk = 0;
+  forever #5 Clk = ~Clk;
+end
+
+initial begin
+  ResetN = 0;
+  #1000 ResetN = 1;
+end
+
+initial begin
+  En = 1;
+  #1000 En = 0;
+  #100 En = 1;
+end
+
+initial begin
+  M_AXIS_tready = 0;
+  #200 M_AXIS_tready = 1;
+  #2000 M_AXIS_tready = 0;
+  #200 M_AXIS_tready = 1;
+end
 
   design_1_wrapper dut
        (.AXI_En(AXI_En),

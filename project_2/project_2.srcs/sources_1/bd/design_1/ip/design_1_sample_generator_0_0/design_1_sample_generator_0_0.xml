@@ -548,11 +548,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 14 16:54:05 UTC 2020</spirit:value>
+            <spirit:value>Mon Mar 16 11:52:18 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e590a3cf</spirit:value>
+            <spirit:value>9:8793dd7f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -563,7 +563,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e590a3cf</spirit:value>
+            <spirit:value>9:8793dd7f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -579,11 +579,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 14 16:54:05 UTC 2020</spirit:value>
+            <spirit:value>Mon Mar 16 11:52:18 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e590a3cf</spirit:value>
+            <spirit:value>9:8793dd7f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -599,11 +599,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 14 16:54:05 UTC 2020</spirit:value>
+            <spirit:value>Mon Mar 16 11:52:18 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7a3485d4</spirit:value>
+            <spirit:value>9:73e74e43</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -619,11 +619,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 14 16:54:05 UTC 2020</spirit:value>
+            <spirit:value>Mon Mar 16 11:52:18 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7a3485d4</spirit:value>
+            <spirit:value>9:73e74e43</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -636,12 +636,8 @@
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Sat Mar 14 16:54:05 UTC 2020</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:e590a3cf</spirit:value>
+            <spirit:value>9:8793dd7f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -665,7 +661,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:left spirit:format="long">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -925,11 +921,11 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/b952/hdl/sample_generator_v1_0_M_AXIS.v</spirit:name>
+        <spirit:name>../../ipshared/3f74/hdl/sample_generator_v1_0_M_AXIS.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/b952/hdl/sample_generator_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/3f74/hdl/sample_generator_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -944,11 +940,11 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/b952/hdl/sample_generator_v1_0_M_AXIS.v</spirit:name>
+        <spirit:name>../../ipshared/3f74/hdl/sample_generator_v1_0_M_AXIS.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/b952/hdl/sample_generator_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/3f74/hdl/sample_generator_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -970,6 +966,18 @@
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
+        <spirit:name>design_1_sample_generator_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>design_1_sample_generator_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>design_1_sample_generator_0_0_sim_netlist.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
@@ -981,18 +989,6 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
         <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>design_1_sample_generator_0_0_stub.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>design_1_sample_generator_0_0_stub.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -1025,7 +1021,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>sample_generator_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreRevision>11</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6da6c4df_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7072c048_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
@@ -1057,6 +1053,58 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@41affc3a_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@705cc59e_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@39b3dd78_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@622a9f5a_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f40c3c8_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@602a12dd_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ff386b5_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@753540d7_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b3c4978_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d282ae7_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7864dc9b_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b51dd5c_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cbf01e8_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27708e79_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10b358c6_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70a56408_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d12d358_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ca379a9_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@477015c6_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25ea0902_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74c015dc_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@714a3161_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53468597_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19993988_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@106d0cd8_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a455abe_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a419e9d_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59619011_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3167bb33_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39724674_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41652323_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@635991fe_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@657da662_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1222a5a3_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@469e3c6c_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20822d0c_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4390cc57_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53bb88e8_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d8e79f0_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16471084_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67c3b56b_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25440507_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@439cca65_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a546148_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@787344e3_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56f01e81_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@641c72a_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ba1fa10_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@481f45a6_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d5abe80_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ede7a29_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c16430b_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@359bc295_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1244dd6_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35d76953_ARCHIVE_LOCATION">/home/jaehee2/Documents/gitrepos/fpga/sample_generator/ip_repo/sample_generator_1.0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
@@ -1101,9 +1149,9 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a915337a"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="92335785"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="98d390e4"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9d920bc5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="49e82956"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="474f9e2b"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="05922658"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="91aa2079"/>
     </xilinx:packagingInfo>

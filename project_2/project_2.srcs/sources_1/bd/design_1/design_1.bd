@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xFC6DBC89FA455728",
+      "boundary_crc": "0x868C2A29A591C83B",
       "device": "xc7z020clg484-1",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
@@ -154,11 +154,6 @@
       "En": {
         "direction": "I"
       },
-      "FrameSize": {
-        "direction": "I",
-        "left": "7",
-        "right": "0"
-      },
       "AXI_En": {
         "direction": "I"
       },
@@ -175,6 +170,11 @@
             "value_src": "default"
           }
         }
+      },
+      "FrameSize": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
       }
     },
     "components": {
@@ -201,20 +201,14 @@
       "m_axis_aclk_0_1": {
         "ports": [
           "m_axis_aclk_0",
-          "sample_generator_0/m_axis_aclk",
-          "sample_generator_0/s_axis_aclk"
+          "sample_generator_0/s_axis_aclk",
+          "sample_generator_0/m_axis_aclk"
         ]
       },
       "En_1": {
         "ports": [
           "En",
           "sample_generator_0/En"
-        ]
-      },
-      "FrameSize_1": {
-        "ports": [
-          "FrameSize",
-          "sample_generator_0/FrameSize"
         ]
       },
       "AXI_En_1": {
@@ -226,8 +220,14 @@
       "m_axis_aresetn_1": {
         "ports": [
           "m_axis_aresetn",
-          "sample_generator_0/m_axis_aresetn",
-          "sample_generator_0/s_axis_aresetn"
+          "sample_generator_0/s_axis_aresetn",
+          "sample_generator_0/m_axis_aresetn"
+        ]
+      },
+      "FrameSize_1": {
+        "ports": [
+          "FrameSize",
+          "sample_generator_0/FrameSize"
         ]
       }
     }

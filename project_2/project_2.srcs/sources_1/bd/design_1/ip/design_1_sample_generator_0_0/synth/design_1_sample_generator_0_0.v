@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:sample_generator:1.0
-// IP Revision: 3
+// IP Revision: 11
 
 (* X_CORE_INFO = "sample_generator_v1_0,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_sample_generator_0_0,sample_generator_v1_0,{}" *)
@@ -74,7 +74,7 @@ module design_1_sample_generator_0_0 (
 );
 
 input wire En;
-input wire [7 : 0] FrameSize;
+input wire [31 : 0] FrameSize;
 input wire AXI_En;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS_CLK, ASSOCIATED_BUSIF S_AXIS, ASSOCIATED_RESET s_axis_aresetn, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_m_axis_aclk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_AXIS_CLK CLK" *)

@@ -175,7 +175,7 @@ proc create_root_design { parentCell } {
   # Create ports
   set AXI_En [ create_bd_port -dir I AXI_En ]
   set En [ create_bd_port -dir I En ]
-  set FrameSize [ create_bd_port -dir I -from 7 -to 0 FrameSize ]
+  set FrameSize [ create_bd_port -dir I -from 31 -to 0 FrameSize ]
   set m_axis_aclk_0 [ create_bd_port -dir I -type clk m_axis_aclk_0 ]
   set m_axis_aresetn [ create_bd_port -dir I -type rst m_axis_aresetn ]
 

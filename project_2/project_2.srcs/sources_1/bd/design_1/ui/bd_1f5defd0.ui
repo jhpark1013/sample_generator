@@ -1,27 +1,27 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-517,-364",
+   "Default View_TopLeft":"-450,-129",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
 #  -string -flagsOSRD
-preplace port S_AXIS -pg 1 -lvl 0 -x -70 -y -180 -defaultsOSRD
-preplace port M_AXIS -pg 1 -lvl 2 -x 240 -y -160 -defaultsOSRD
-preplace port m_axis_aclk_0 -pg 1 -lvl 0 -x -70 -y -100 -defaultsOSRD
-preplace port En -pg 1 -lvl 0 -x -70 -y -160 -defaultsOSRD
-preplace port AXI_En -pg 1 -lvl 0 -x -70 -y -120 -defaultsOSRD
-preplace port m_axis_aresetn -pg 1 -lvl 0 -x -70 -y -40 -defaultsOSRD
-preplace portBus FrameSize -pg 1 -lvl 0 -x -70 -y -140 -defaultsOSRD
-preplace inst sample_generator_0 -pg 1 -lvl 1 -x 90 -y -110 -defaultsOSRD
-preplace netloc m_axis_aclk_0_1 1 0 1 -50 -100n
-preplace netloc En_1 1 0 1 N -160
-preplace netloc FrameSize_1 1 0 1 N -140
-preplace netloc AXI_En_1 1 0 1 N -120
-preplace netloc m_axis_aresetn_1 1 0 1 -40 -80n
-preplace netloc S_AXIS_1 1 0 1 N -180
-preplace netloc sample_generator_0_M_AXIS 1 1 1 220 -160n
-levelinfo -pg 1 -70 90 240
-pagesize -pg 1 -db -bbox -sgen -230 -240 350 200
+preplace port S_AXIS -pg 1 -lvl 0 -x 0 -y 10 -defaultsOSRD
+preplace port M_AXIS -pg 1 -lvl 2 -x 310 -y 130 -defaultsOSRD
+preplace port m_axis_aclk_0 -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port En -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port AXI_En -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port m_axis_aresetn -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace portBus FrameSize -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace inst sample_generator_0 -pg 1 -lvl 1 -x 160 -y 130 -defaultsOSRD
+preplace netloc m_axis_aclk_0_1 1 0 1 30 140n
+preplace netloc En_1 1 0 1 20J 40n
+preplace netloc AXI_En_1 1 0 1 NJ 120
+preplace netloc m_axis_aresetn_1 1 0 1 20 160n
+preplace netloc FrameSize_1 1 0 1 30 90n
+preplace netloc S_AXIS_1 1 0 1 30J 10n
+preplace netloc sample_generator_0_M_AXIS 1 1 1 N 130
+levelinfo -pg 1 0 160 310
+pagesize -pg 1 -db -bbox -sgen -170 -20 420 260
 "
 }
-
+0

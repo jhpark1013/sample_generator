@@ -1,13 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Mar 14 12:54:05 2020" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 16 07:52:18 2020" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="xilinx.com:zc702:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m_axis_aclk_0" SIGIS="clk" SIGNAME="External_Ports_m_axis_aclk_0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="sample_generator_0" PORT="m_axis_aclk"/>
         <CONNECTION INSTANCE="sample_generator_0" PORT="s_axis_aclk"/>
+        <CONNECTION INSTANCE="sample_generator_0" PORT="m_axis_aclk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="En" SIGIS="undef" SIGNAME="External_Ports_En">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sample_generator_0" PORT="En"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AXI_En" SIGIS="undef" SIGNAME="External_Ports_AXI_En">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sample_generator_0" PORT="AXI_En"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="m_axis_aresetn" SIGIS="rst" SIGNAME="External_Ports_m_axis_aresetn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sample_generator_0" PORT="s_axis_aresetn"/>
+        <CONNECTION INSTANCE="sample_generator_0" PORT="m_axis_aresetn"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" LEFT="31" NAME="S_AXIS_tdata" RIGHT="0" SIGIS="undef" SIGNAME="sample_generator_0_s_axis_tdata">
@@ -60,25 +76,9 @@
         <CONNECTION INSTANCE="sample_generator_0" PORT="m_axis_tready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="En" SIGIS="undef" SIGNAME="External_Ports_En">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="sample_generator_0" PORT="En"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" LEFT="7" NAME="FrameSize" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_FrameSize">
+    <PORT DIR="I" LEFT="31" NAME="FrameSize" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_FrameSize">
       <CONNECTIONS>
         <CONNECTION INSTANCE="sample_generator_0" PORT="FrameSize"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="AXI_En" SIGIS="undef" SIGNAME="External_Ports_AXI_En">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="sample_generator_0" PORT="AXI_En"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="m_axis_aresetn" SIGIS="rst" SIGNAME="External_Ports_m_axis_aresetn">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="sample_generator_0" PORT="m_axis_aresetn"/>
-        <CONNECTION INSTANCE="sample_generator_0" PORT="s_axis_aresetn"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -131,7 +131,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="3" FULLNAME="/sample_generator_0" HWVERSION="1.0" INSTANCE="sample_generator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sample_generator" VLNV="user.org:user:sample_generator:1.0">
+    <MODULE COREREVISION="11" FULLNAME="/sample_generator_0" HWVERSION="1.0" INSTANCE="sample_generator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sample_generator" VLNV="user.org:user:sample_generator:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_M_AXIS_TDATA_WIDTH" VALUE="32"/>
@@ -146,7 +146,7 @@
             <CONNECTION INSTANCE="External_Ports" PORT="En"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="FrameSize" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_FrameSize">
+        <PORT DIR="I" LEFT="31" NAME="FrameSize" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_FrameSize">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="FrameSize"/>
           </CONNECTIONS>

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-//Date        : Sat Mar 14 12:54:04 2020
+//Date        : Mon Mar 16 07:52:18 2020
 //Host        : jaehee2-tp running 64-bit Ubuntu 19.04
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -28,7 +28,7 @@ module design_1
     m_axis_aresetn);
   input AXI_En;
   input En;
-  input [7:0]FrameSize;
+  input [31:0]FrameSize;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, CLK_DOMAIN design_1_m_axis_aclk_0, FREQ_HZ 100000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 1, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0" *) output [31:0]M_AXIS_tdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *) output M_AXIS_tlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TREADY" *) input M_AXIS_tready;
@@ -44,7 +44,7 @@ module design_1
 
   wire AXI_En_1;
   wire En_1;
-  wire [7:0]FrameSize_1;
+  wire [31:0]FrameSize_1;
   wire [31:0]S_AXIS_1_TDATA;
   wire S_AXIS_1_TLAST;
   wire S_AXIS_1_TREADY;
@@ -60,7 +60,7 @@ module design_1
 
   assign AXI_En_1 = AXI_En;
   assign En_1 = En;
-  assign FrameSize_1 = FrameSize[7:0];
+  assign FrameSize_1 = FrameSize[31:0];
   assign M_AXIS_tdata[31:0] = sample_generator_0_M_AXIS_TDATA;
   assign M_AXIS_tlast = sample_generator_0_M_AXIS_TLAST;
   assign M_AXIS_tstrb[3:0] = sample_generator_0_M_AXIS_TSTRB;

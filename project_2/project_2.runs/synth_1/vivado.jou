@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2700185 on Thu Oct 24 18:45:48 MDT 2019
 # IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
-# Start of session at: Sat Mar 14 12:54:27 2020
-# Process ID: 12127
+# Start of session at: Sun Mar 15 11:10:20 2020
+# Process ID: 15441
 # Current directory: /home/jaehee2/Documents/gitrepos/fpga/sample_generator/project_2/project_2.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/jaehee2/Documents/gitrepos/fpga/sample_generator/project_2/project_2.runs/synth_1/design_1_wrapper.vds

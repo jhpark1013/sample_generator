@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (lin64) Build 2700185 Thu Oct 24 18:45:48 MDT 2019
-//Date        : Sat Mar 14 12:54:04 2020
+//Date        : Mon Mar 16 07:52:18 2020
 //Host        : jaehee2-tp running 64-bit Ubuntu 19.04
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -27,7 +27,7 @@ module design_1_wrapper
     m_axis_aresetn);
   input AXI_En;
   input En;
-  input [7:0]FrameSize;
+  input [31:0]FrameSize;
   output [31:0]M_AXIS_tdata;
   output M_AXIS_tlast;
   input M_AXIS_tready;
@@ -43,7 +43,7 @@ module design_1_wrapper
 
   wire AXI_En;
   wire En;
-  wire [7:0]FrameSize;
+  wire [31:0]FrameSize;
   wire [31:0]M_AXIS_tdata;
   wire M_AXIS_tlast;
   wire M_AXIS_tready;
